@@ -1,5 +1,7 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
+const copia = document.querySelector(".btn-copiar");
+// copia.style.display = "none"
 
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
@@ -46,4 +48,10 @@ function desencriptar(strinDesncriptarParametro) {
     });
   });
   return strinDesncriptarParametro;
+}
+
+function copiar(){
+  mensaje.select();
+  navigator.clipboard.writeText(mensaje.value)
+  alert("Texto Copiado")
 }
