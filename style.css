@@ -82,5 +82,24 @@ main {
   margin-left: 108px;
   margin-top: 402px;
   position: absolute;
-  width: 336px;
+  /* width: 336px; */
+  width: 150px;
+}
+
+.btn-pegar {
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 300px;
+  margin-top: 402px;
+  position: absolute;
+  /* width: 336px; */
+  width: 150px;
+}
+
+.informacion {
+  color: #495057;
+  font-size:18px;
 }

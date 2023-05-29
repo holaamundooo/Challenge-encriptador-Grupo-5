@@ -1,6 +1,7 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 const copia = document.querySelector(".btn-copiar");
+const informacion = document.querySelector(".informacion");
 // copia.style.display = "none"
 
 // La letra "e" es convertida para "enter"
@@ -58,13 +59,18 @@ function copiar(){
   alert("Texto Copiado")
 }
 
+function pegar(){
+  textArea.value = mensaje.value;
+}
+
 function validarTexto(){
   let textoEscrito = document.querySelector(".text-area").value;
   let validador = textoEscrito.match(/^[a-z]*$/);
-
   if(!validador || validador === 0) {
+      informacion.style.color = "red";
+      textArea.value = "";
       alert("Solo son permitidas letras minúsculas y sin acentos")
-      location.reload();
       return true;
   }
+  informacion.style.color = "green";
 }
