@@ -32,7 +32,7 @@ main {
 
 .mensaje {
   background:  white;
-  background-image: url("/imagenes/persona.png");
+  background-image: url("../imagenes/persona.png");
   background-repeat: no-repeat;
   border: none;
   border-radius: 24px;
